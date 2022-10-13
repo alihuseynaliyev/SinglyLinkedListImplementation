@@ -1,12 +1,12 @@
 package org.example;
 
-public class SinglyLinkedList{
+public class SinglyLinkedList <T>{
 
     class Node {
-        int data;
+        T data;
         Node next;
 
-        public Node(int data) {
+        public Node(T data) {
             this.data = data;
             next = null;
         }
@@ -14,7 +14,7 @@ public class SinglyLinkedList{
         public Node head = null;
         public Node tail = null;
 
-        public void addNode(int data) {
+        public void addNode(T data) {
             Node newNode = new Node(data);
             if (head == null) {
                 head = newNode;
